@@ -13,8 +13,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookClub.Entities", "BookCl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookClub.Logic", "BookClub.Logic\BookClub.Logic.csproj", "{4927AB3B-FB60-43FD-B0E3-FD7806120AA8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookClub.Infrastructure", "BookClub.Infrastructure\BookClub.Infrastructure.csproj", "{F95A72EE-6E6C-4DC8-8703-86695B7A4148}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreFlogger", "..\..\Flogging\CoreFlogger\CoreFlogger.csproj", "{8508719F-56F2-4737-9605-5AE3DC60CBA8}"
 EndProject
 Global
@@ -43,10 +41,6 @@ Global
 		{4927AB3B-FB60-43FD-B0E3-FD7806120AA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4927AB3B-FB60-43FD-B0E3-FD7806120AA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4927AB3B-FB60-43FD-B0E3-FD7806120AA8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F95A72EE-6E6C-4DC8-8703-86695B7A4148}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F95A72EE-6E6C-4DC8-8703-86695B7A4148}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F95A72EE-6E6C-4DC8-8703-86695B7A4148}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F95A72EE-6E6C-4DC8-8703-86695B7A4148}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8508719F-56F2-4737-9605-5AE3DC60CBA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8508719F-56F2-4737-9605-5AE3DC60CBA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8508719F-56F2-4737-9605-5AE3DC60CBA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
