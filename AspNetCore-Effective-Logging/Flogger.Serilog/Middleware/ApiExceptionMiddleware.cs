@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Newtonsoft.Json;
 using Serilog;
+using Serilog.Events;
 
 namespace Flogger.Serilog.Middleware
 {
@@ -40,9 +41,10 @@ namespace Flogger.Serilog.Middleware
             };
 
             opts.AddResponseDetails?.Invoke(context, exception, error);
+            var level = opts.DetermineLogLevel?.Invoke(exception) ?? LogEventLevel.Error;
             
             Log.ForContext("ErrorId", error.Id)
-               .Error(exception, "An exception was caught in the API request pipeline");
+                .Write(level, exception, "An exception was caught in the API request pipeline");
 
             var result = JsonConvert.SerializeObject(error);
             context.Response.ContentType = "application/json";

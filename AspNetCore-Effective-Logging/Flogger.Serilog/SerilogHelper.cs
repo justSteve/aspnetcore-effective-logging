@@ -43,6 +43,8 @@ namespace Flogger.Serilog
                         var email = ci?.Claims.FirstOrDefault(a => a.Type == "email")?.Value;
                         diagCtx.Set("UserName", email);
                         diagCtx.Set("UserId", ci?.Claims.FirstOrDefault(a => a.Type == "sub")?.Value);
+
+                        diagCtx.Set("UserClaims", ci?.Claims);
                     }
                 };
             });

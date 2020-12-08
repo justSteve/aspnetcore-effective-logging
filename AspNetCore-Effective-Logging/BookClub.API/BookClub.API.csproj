@@ -7,25 +7,15 @@
   <ItemGroup>
     <PackageReference Include="IdentityModel" Version="4.3.1" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.6" />
-    <PackageReference Include="NLog.Targets.ElasticSearch" Version="7.3.0" />
-    <PackageReference Include="NLog.Web.AspNetCore" Version="4.9.2" />
-    <PackageReference Include="Serilog.AspNetCore" Version="3.2.0" />
-    <PackageReference Include="Serilog.Sinks.Seq" Version="4.0.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.5.1" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CoreFlogger\CoreFlogger.csproj" />
     <ProjectReference Include="..\BookClub.Data\BookClub.Data.csproj" />
     <ProjectReference Include="..\BookClub.Entities\BookClub.Entities.csproj" />
     <ProjectReference Include="..\BookClub.Logic\BookClub.Logic.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Update="nlog.config">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    <ProjectReference Include="..\Flogger.Serilog\Flogger.Serilog.csproj" />
   </ItemGroup>
 
 </Project>
